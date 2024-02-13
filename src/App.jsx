@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 const url = import.meta.env.VITE_API_URL;
+console.log(url);
 
 function App() {
   const [v, setV] = useState(null);
@@ -9,7 +10,7 @@ function App() {
   useEffect(() => {
     // if(v === null) return;
 
-    fetch("http://localhost:3000/", {
+    fetch(`${url}/`, {
       method: "GET",
       headers: {
         "content-type": "application/json",
