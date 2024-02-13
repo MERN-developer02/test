@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     // if(v === null) return;
 
-    fetch(`${url}/`, {
+    fetch(`api/`, {
       method: "GET",
       headers: {
         "content-type": "application/json",
