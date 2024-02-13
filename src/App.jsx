@@ -17,7 +17,7 @@ function App() {
       }
     })
       .then((data) => {
-        console.log(`data: ${data}`)
+        console.log(`data: ${data.json()}`)
         data.json().then((value) => setV(value));
         // data.json();
       })
