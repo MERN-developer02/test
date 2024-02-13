@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     // if(v === null) return;
 
-    fetch(`${url}`, {
+    fetch("http://localhost:3000/", {
       method: "GET",
       headers: {
         "content-type": "application/json",
